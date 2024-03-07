@@ -41,6 +41,19 @@ body,html {
         gap: 10px 10px;
         justify-items: center;
       }
+
+      .grid-box{
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 100px 10px;
+        justify-items: center;
+      }
+.box{
+  background-color: #d87093;
+  padding: 20px;
+  color: white;
+}
 .logo {
     font-weight: bold;
     color: black;
@@ -150,14 +163,23 @@ backdrop-filter: blur(10.3px);
 	flex-wrap: wrap;
 	width: 50%;
 	margin: 0 auto;
+  flex-direction: column;
   }
+.container-text{
+  color: #d87093;
+  font-weight: bold;
+
+}
+.container-subtext{
+  font-weight: bold;
+}
 
   .navcontainer {
     padding: 16px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
     justify-content: center;
   }
