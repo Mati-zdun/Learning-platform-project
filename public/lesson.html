@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,14 +15,12 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="navcontainer">
+      <div class="container">
         <a href="#" class="logo">Javascript Manuscript</a>
         <ul class="nav-links">
           <li><a href="index.html">Home</a></li>
           <li><a href="register.html">Account</a></li>
           <li><a href="progress.html">Progress</a></li>
-          <li><a href="lesson.html">Lessons</a></li>
-          <li><a href="asessment.html">Assessments</a></li>
           <li><a href="about.html">About Us</a></li>
         </ul>
         <button class="hamburger">
@@ -32,25 +30,12 @@
         </button>
       </div>
     </nav>
+
     <div class="lessoncontainer">
-        <div class="lessoncontainer">
-            <div class="lesson">
-              <button class="collapsible">Open Lesson 1</button>
-              <div class="lesscontent">
-                <div class="lessoncontent">
-                  <!-- Lesson 1 content goes here -->
-                </div>
-              </div>
-            </div>
-            <div class="lesson">
-                <button class="collapsible">Open Lesson 1</button>
-                <div class="lesscontent">
-                  <div class="lessoncontent">
-                    <!-- Lesson 1 content goes here -->
-                  </div>
-                </div>
-              </div>
-      <div class="lesscontent">
+      <button type="button" class="collapsible">
+        Open Lesson 1: data types
+      </button>
+      <div class="content">
         <div class="lessoncontent">
           <h1>javascript turotial lesson 1:</h1>
           <h3>data types</h3>
@@ -60,63 +45,104 @@
             <br />
             There are eight basic data types in JavaScript: <br />
             <br /><br />
-            Number: represents numeric values, such as 42, 3.14, or -Infinity.
-            <br /><br />String: represents textual values, such as "Hello",
-            'World', or "\n". <br />
-            <br />Boolean: represents logical values, either true or false.
-            <br />
-            <br />
-            Null: represents the absence of any value. Undefined: represents a
-            value that has not been assigned. <br />
-            <br />
-            <br />
-            Symbol: represents a unique and immutable identifier. <br />
-            BigInt: represents arbitrary-precision integers, such as 123n or
-            2n**100n. <br />
-            <br />
-            Object: represents a collection of properties and methods, such as
-            {name: "Alice", age: 25} or Math. You can use the type of operator
-            to check the data type of any value, for example:
+            1. Number: Represents numeric data, including integers and
+            floating-point numbers. <br /><br />
+            2. String: Represents textual data enclosed within single (' ') or
+            double (" ") quotes. <br /><br />
+            3. Boolean: Represents logical values: true or false. <br /><br />
+            4. Undefined: Represents a variable that has been declared but not
+            assigned a value. <br /><br />
+            5. Null: Represents the intentional absence of any object value.
+            <br /><br />
+            6. Symbol: Represents unique identifiers. Introduced in ECMAScript 6
+            (ES6). <br /><br />
+            7. Object: Represents a collection of key-value pairs where values
+            can be of any data type. <br /><br />
+            8. BigInt: Represents integers of arbitrary length. Introduced in
+            ECMAScript 2020 (ES11).
           </p>
           <div class="codeblockouter">
             <div class="codeblockinner">
               <p>
-                type of "Hello"; // "string" <br />
-                type of true; // "boolean"<br />
-                type of null; // "object"<br />
-                type of undefined; // "undefined"<br />
-                type of Symbol("foo"); // "symbol"<br />
-                type of 123; // "bigint"<br />
-                type of Math; // "object"<br />
-
-                m
+                <br />
+                type of "Hello"; = "string" <br />
+                type of true; = "boolean"<br />
+                type of null; = "object"<br />
+                type of undefined; = "undefined"<br />
+                type of Symbol("foo"); = "symbol"<br />
+                type of 123; = "bigint"<br />
+                type of Math; = "object"<br />
+                <br />
+                <br />
               </p>
+
+              <h2>here are some more examples</h2>
+              <p>------------------------------------</p>
+              1. Number var num = 10; <br />
+              let anotherNum = 5.5; <br /><br />
+
+              <p>
+                <b>Num</b> is the entity, it has been given an identity num and
+                assigned the value shown
+              </p>
+              <p>------------------------------------</p>
+
+              2. String var message = 'Hello, World!'; <br />
+              let anotherMessage = "JavaScript is awesome!"; <br /><br />
+
+              <p>------------------------------------</p>
+
+              3. Boolean var isTrue = true; <br />
+              let isFalse = false; <br /><br />
+
+              <p>------------------------------------</p>
+
+              4. Undefined var notDefined; <br />
+              let alsoNotDefined; <br /><br />
+
+              <p>------------------------------------</p>
+
+              5. Null var nothing = null; <br /><br />
+
+              <p>------------------------------------</p>
+
+              6. Symbol const sym = Symbol('unique'); <br /><br />
+
+              <p>------------------------------------</p>
+
+              7. Object var person = { name: 'John', age: 30 }; <br /><br />
+
+              <p>------------------------------------</p>
+
+              8. BigInt const bigIntNum =
+              1234567890123456789012345678901234567890n;
+              <br /><br /><br />
             </div>
           </div>
         </div>
       </div>
-
-      <div class="lesscontent">
+      <button type="button" class="collapsible">
+        Open Lesson 2: basic syntax
+      </button>
+      <div class="content">
         <div class="lessoncontent">
-          <p></p>
+          <h1>Tutorial: Lesson 2</h1>
+          <h3>basic syntax</h3>
+          <p>
+            In JavaScript, let's delve deeper into the basic data types
+            mentioned in the previous lesson:
+            <br /><br />
+            <strong>Number:</strong> Numeric values, such as integers or
+            floating-point numbers. <br /><br />
+            <strong>String:</strong> Textual values enclosed within single or
+            double quotes. <br /><br />
+            <strong>Boolean:</strong> Represents logical values, either true or
+            false. <br /><br />
+            Let's explore examples and use cases for each of these data types to
+            understand their significance in JavaScript programming.
+          </p>
           <div class="codeblockouter">
             <div class="codeblockinner">
-              <h1>JavaScript Tutorial: Lesson 2</h1>
-              <h3>Further Breakdown of Basic Data Types</h3>
-              <p>
-                In JavaScript, let's delve deeper into the basic data types
-                mentioned in the previous lesson:
-                <br /><br />
-                <strong>Number:</strong> Numeric values, such as integers or
-                floating-point numbers. <br /><br />
-                <strong>String:</strong> Textual values enclosed within single
-                or double quotes. <br /><br />
-                <strong>Boolean:</strong> Represents logical values, either true
-                or false. <br /><br />
-                Let's explore examples and use cases for each of these data
-                types to understand their significance in JavaScript
-                programming.
-              </p>
               <p>
                 typeof "Hello"; // "string" <br />
                 typeof true; // "boolean"<br />
@@ -130,11 +156,31 @@
           </div>
         </div>
       </div>
-      <div class="lesscontent">
+      <button type="button" class="collapsible">
+        Open Lesson 3: variables
+      </button>
+      <div class="content">
         <div class="lessoncontent">
-          <h1>javascript turotial lesson 1:</h1>
-          <h3>data types</h3>
           <p></p>
+          <h1>Tutorial: Lesson 3</h1>
+          <h3>variables</h3>
+          <p>
+            In this lesson, we'll explore advanced JavaScript concepts that will
+            take your programming skills to the next level. Some of the topics
+            covered include:
+          </p>
+          <ul>
+            <li>Object-Oriented Programming (OOP) in JavaScript</li>
+            <li>Functional Programming Paradigm</li>
+            <li>Asynchronous JavaScript (Promises, async/await)</li>
+            <li>Modules and Module Loaders</li>
+            <li>Browser APIs and DOM Manipulation</li>
+            <li>Error Handling and Debugging Techniques</li>
+          </ul>
+          <p>
+            By understanding these advanced concepts, you'll be better equipped
+            to build robust and efficient JavaScript applications.
+          </p>
           <div class="codeblockouter">
             <div class="codeblockinner">
               <p>
@@ -150,11 +196,197 @@
           </div>
         </div>
       </div>
-      <div class="lesscontent">
+      <button type="button" class="collapsible">
+        Open Lesson 4: Operations
+      </button>
+      <div class="content">
         <div class="lessoncontent">
-          <h1>javascript turotial lesson 1:</h1>
-          <h3>data types</h3>
           <p></p>
+          <h1>Tutorial: Lesson 4</h1>
+          <h3>Operations</h3>
+          <p>
+            Welcome to the Expert level of our JavaScript tutorial series! In
+            this lesson, we'll dive deep into intricate and sophisticated
+            aspects of JavaScript programming, catering to seasoned developers
+            who aim to become JavaScript masters. Topics covered include:
+          </p>
+          <ul>
+            <li>Advanced Data Structures and Algorithms</li>
+            <li>Performance Optimization Techniques</li>
+            <li>Design Patterns and Best Practices</li>
+            <li>Metaprogramming and Reflection</li>
+            <li>Browser Internals and Performance Tuning</li>
+            <li>Security Considerations and Vulnerability Mitigation</li>
+          </ul>
+          <p>
+            By mastering these advanced topics, you'll possess the expertise to
+            tackle complex challenges and build high-performance,
+            enterprise-grade JavaScript applications.
+          </p>
+          <div class="codeblockouter">
+            <div class="codeblockinner">
+              <p>
+                typeof "Hello"; // "string" <br />
+                typeof true; // "boolean"<br />
+                typeof null; // "object"<br />
+                typeof undefined; // "undefined"<br />
+                typeof Symbol("foo"); // "symbol"<br />
+                typeof 123n; // "bigint"<br />
+                typeof Math; // "object"<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        Open Lesson 5: Control structures
+      </button>
+      <div class="content">
+        <div class="lessoncontent">
+          <p></p>
+          <h1>Tutorial: Lesson 4</h1>
+          <h3>Control structures</h3>
+          <p>
+            Welcome to the Expert level of our JavaScript tutorial series! In
+            this lesson, we'll dive deep into intricate and sophisticated
+            aspects of JavaScript programming, catering to seasoned developers
+            who aim to become JavaScript masters. Topics covered include:
+          </p>
+          <ul>
+            <li>Advanced Data Structures and Algorithms</li>
+            <li>Performance Optimization Techniques</li>
+            <li>Design Patterns and Best Practices</li>
+            <li>Metaprogramming and Reflection</li>
+            <li>Browser Internals and Performance Tuning</li>
+            <li>Security Considerations and Vulnerability Mitigation</li>
+          </ul>
+          <p>
+            By mastering these advanced topics, you'll possess the expertise to
+            tackle complex challenges and build high-performance,
+            enterprise-grade JavaScript applications.
+          </p>
+          <div class="codeblockouter">
+            <div class="codeblockinner">
+              <p>
+                typeof "Hello"; // "string" <br />
+                typeof true; // "boolean"<br />
+                typeof null; // "object"<br />
+                typeof undefined; // "undefined"<br />
+                typeof Symbol("foo"); // "symbol"<br />
+                typeof 123n; // "bigint"<br />
+                typeof Math; // "object"<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">
+        Open Lesson 6: Functions
+      </button>
+      <div class="content">
+        <div class="lessoncontent">
+          <p></p>
+          <h1>Tutorial: Lesson 4</h1>
+          <h3>Functions</h3>
+          <p>
+            Welcome to the Expert level of our JavaScript tutorial series! In
+            this lesson, we'll dive deep into intricate and sophisticated
+            aspects of JavaScript programming, catering to seasoned developers
+            who aim to become JavaScript masters. Topics covered include:
+          </p>
+          <ul>
+            <li>Advanced Data Structures and Algorithms</li>
+            <li>Performance Optimization Techniques</li>
+            <li>Design Patterns and Best Practices</li>
+            <li>Metaprogramming and Reflection</li>
+            <li>Browser Internals and Performance Tuning</li>
+            <li>Security Considerations and Vulnerability Mitigation</li>
+          </ul>
+          <p>
+            By mastering these advanced topics, you'll possess the expertise to
+            tackle complex challenges and build high-performance,
+            enterprise-grade JavaScript applications.
+          </p>
+          <div class="codeblockouter">
+            <div class="codeblockinner">
+              <p>
+                typeof "Hello"; // "string" <br />
+                typeof true; // "boolean"<br />
+                typeof null; // "object"<br />
+                typeof undefined; // "undefined"<br />
+                typeof Symbol("foo"); // "symbol"<br />
+                typeof 123n; // "bigint"<br />
+                typeof Math; // "object"<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">Open Lesson 7: Objects</button>
+      <div class="content">
+        <div class="lessoncontent">
+          <p></p>
+          <h1>Tutorial: Lesson 4</h1>
+          <h3>Objects</h3>
+          <p>
+            Welcome to the Expert level of our JavaScript tutorial series! In
+            this lesson, we'll dive deep into intricate and sophisticated
+            aspects of JavaScript programming, catering to seasoned developers
+            who aim to become JavaScript masters. Topics covered include:
+          </p>
+          <ul>
+            <li>Advanced Data Structures and Algorithms</li>
+            <li>Performance Optimization Techniques</li>
+            <li>Design Patterns and Best Practices</li>
+            <li>Metaprogramming and Reflection</li>
+            <li>Browser Internals and Performance Tuning</li>
+            <li>Security Considerations and Vulnerability Mitigation</li>
+          </ul>
+          <p>
+            By mastering these advanced topics, you'll possess the expertise to
+            tackle complex challenges and build high-performance,
+            enterprise-grade JavaScript applications.
+          </p>
+          <div class="codeblockouter">
+            <div class="codeblockinner">
+              <p>
+                typeof "Hello"; // "string" <br />
+                typeof true; // "boolean"<br />
+                typeof null; // "object"<br />
+                typeof undefined; // "undefined"<br />
+                typeof Symbol("foo"); // "symbol"<br />
+                typeof 123n; // "bigint"<br />
+                typeof Math; // "object"<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button type="button" class="collapsible">Open Lesson 8: Arrays</button>
+      <div class="content">
+        <div class="lessoncontent">
+          <p></p>
+          <h1>Tutorial: Lesson 4</h1>
+          <h3>Arrays</h3>
+          <p>
+            Welcome to the Expert level of our JavaScript tutorial series! In
+            this lesson, we'll dive deep into intricate and sophisticated
+            aspects of JavaScript programming, catering to seasoned developers
+            who aim to become JavaScript masters. Topics covered include:
+          </p>
+          <ul>
+            <li>Advanced Data Structures and Algorithms</li>
+            <li>Performance Optimization Techniques</li>
+            <li>Design Patterns and Best Practices</li>
+            <li>Metaprogramming and Reflection</li>
+            <li>Browser Internals and Performance Tuning</li>
+            <li>Security Considerations and Vulnerability Mitigation</li>
+          </ul>
+          <p>
+            By mastering these advanced topics, you'll possess the expertise to
+            tackle complex challenges and build high-performance,
+            enterprise-grade JavaScript applications.
+          </p>
           <div class="codeblockouter">
             <div class="codeblockinner">
               <p>
@@ -171,26 +403,6 @@
         </div>
       </div>
     </div>
-    <script>
-        
-        document.addEventListener("DOMContentLoaded", function () {
-            const collapsibleButtons = document.querySelectorAll(".collapsible");
-
-            collapsibleButtons.forEach(function (button) {
-                button.addEventListener("click", function () {
-                    const content = this.nextElementSibling;
-
-                    this.classList.toggle("active");
-
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + "px";
-                    }
-                });
-            });
-        });
-    
-    </script>
+    <script src="/lesson.js"></script>
   </body>
 </html>
