@@ -82,6 +82,10 @@ app.get("/register", function (req, res) {
   res.render("register");
 });
 
+app.get("/logged.html", function (req, res) {
+  res.render("logged.html");
+});
+
 // Handling user signup
 app.post("/register", async (req, res) => {
   const user = await User.create({
