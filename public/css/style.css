@@ -72,6 +72,7 @@ body,html {
         margin-top: 5vh;
         justify-content: center;
         border-radius: 15px;
+        box-shadow: 15px 35px 35px rgba(50,50,93,.1), 0 1px 1px rgba(0,0,0,.07);
       }
 .box{
   background-color: #d87093;
@@ -301,6 +302,14 @@ backdrop-filter: blur(10.3px);
   }
   #submit:hover{
     background-color: #d87093dc;
+  }
+
+  .reg-title{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
   }
 
 /* Responsive - Show menu on smaller screens */
