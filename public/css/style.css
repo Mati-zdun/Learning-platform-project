@@ -68,6 +68,10 @@ body,html {
         display: flex;
         flex-direction: column;
         padding: 10px;
+        margin: 0 auto;
+        margin-top: 5vh;
+        justify-content: center;
+        border-radius: 15px;
       }
 .box{
   background-color: #d87093;
@@ -167,6 +171,21 @@ backdrop-filter: blur(10.3px);
     text-align: center;
     text-decoration: none;
 }
+.button1{
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+.button1:hover{
+  background-color: #ccc;
+}
 
 .cancelbtn {
   color: black;
@@ -257,6 +276,31 @@ backdrop-filter: blur(10.3px);
     margin: 0 auto;
     display: flex;
     justify-content: center;
+  }
+  .question{
+    padding-top: 3vh;
+    font-weight: 600;
+  }
+  .answers {
+    margin-bottom: 20px;
+  }
+  .answers label{
+    display: block;
+  }
+  #submit{
+    font-family: sans-serif;
+    font-size: 20px;
+    background-color: #d87093;
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    padding: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  #submit:hover{
+    background-color: #d87093dc;
   }
 
 /* Responsive - Show menu on smaller screens */
