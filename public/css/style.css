@@ -71,6 +71,7 @@ html {
   padding: 10px;
 }
 .box {
+
   background-color: #d87093;
   padding: 20px;
   color: white;
@@ -284,6 +285,7 @@ input[type="password"] {
   }
 }
 
+
 .lessoncontainer {
   background-color: rgb(229, 244, 244);
   width: 90%;
@@ -394,6 +396,19 @@ input[type="password"] {
 .cmd-window span[data-term="Symbol"] {
   color: purple; /* Set color for 'Symbol' */
 }
+  .reg-title{
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+  }
+
+/* Responsive - Show menu on smaller screens */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide on smaller screens initially */
+    }
 
 .cmd-window span[data-term="BigInt"] {
   color: blue; /* Set color for 'BigInt' */
