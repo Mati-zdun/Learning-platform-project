@@ -39,86 +39,62 @@
         <div class="lessoncontent">
           <h1>javascript turotial lesson 1:</h1>
           <h3>data types</h3>
+          <br />
+
           <p>
             Data types are the kinds of values that you can store and manipulate
-            in JavaScript. <br />
-            <br />
-            There are eight basic data types in JavaScript: <br />
-            <br /><br />
-            1. Number: Represents numeric data, including integers and
-            floating-point numbers. <br /><br />
-            2. String: Represents textual data enclosed within single (' ') or
-            double (" ") quotes. <br /><br />
-            3. Boolean: Represents logical values: true or false. <br /><br />
-            4. Undefined: Represents a variable that has been declared but not
-            assigned a value. <br /><br />
-            5. Null: Represents the intentional absence of any object value.
-            <br /><br />
-            6. Symbol: Represents unique identifiers. Introduced in ECMAScript 6
-            (ES6). <br /><br />
-            7. Object: Represents a collection of key-value pairs where values
-            can be of any data type. <br /><br />
-            8. BigInt: Represents integers of arbitrary length. Introduced in
-            ECMAScript 2020 (ES11).
+            in JavaScript.
           </p>
-          <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                <br />
-                type of "Hello"; = "string" <br />
-                type of true; = "boolean"<br />
-                type of null; = "object"<br />
-                type of undefined; = "undefined"<br />
-                type of Symbol("foo"); = "symbol"<br />
-                type of 123; = "bigint"<br />
-                type of Math; = "object"<br />
-                <br />
-                <br />
-              </p>
 
-              <h2>here are some more examples</h2>
-              <p>------------------------------------</p>
-              1. Number var num = 10; <br />
-              let anotherNum = 5.5; <br /><br />
+          <p>There are eight basic data types in JavaScript:</p>
 
-              <p>
-                <b>Num</b> is the entity, it has been given an identity num and
-                assigned the value shown
-              </p>
-              <p>------------------------------------</p>
+          <ul>
+            <li>
+              <strong>Number:</strong> Represents numeric data, including
+              integers and floating-point numbers.
+            </li>
+            <li>
+              <strong>String:</strong> Represents textual data enclosed within
+              single (' ') or double (" ") quotes.
+            </li>
+            <li>
+              <strong>Boolean:</strong> Represents logical values: true or
+              false.
+            </li>
+            <li>
+              <strong>Undefined:</strong> Represents a variable that has been
+              declared but not assigned a value.
+            </li>
+            <li>
+              <strong>Null:</strong> Represents the intentional absence of any
+              object value.
+            </li>
+            <li>
+              <strong>Symbol:</strong> Represents unique identifiers. Introduced
+              in ECMAScript 6 (ES6).
+            </li>
+            <li>
+              <strong>Object:</strong> Represents a collection of key-value
+              pairs where values can be of any data type.
+            </li>
+            <li>
+              <strong>BigInt:</strong> Represents integers of arbitrary length.
+              Introduced in ECMAScript 2020 (ES11).
+            </li>
+          </ul>
+          <p>
+            A data type in programming is a classification that specifies what
+            type of value a variable can hold, what operations can be performed
+            on the variable, and how the variable is stored in memory. It
+            defines the characteristics of data stored in variables or used in
+            expressions, such as numbers, text, or logical values.
+          </p>
 
-              2. String var message = 'Hello, World!'; <br />
-              let anotherMessage = "JavaScript is awesome!"; <br /><br />
-
-              <p>------------------------------------</p>
-
-              3. Boolean var isTrue = true; <br />
-              let isFalse = false; <br /><br />
-
-              <p>------------------------------------</p>
-
-              4. Undefined var notDefined; <br />
-              let alsoNotDefined; <br /><br />
-
-              <p>------------------------------------</p>
-
-              5. Null var nothing = null; <br /><br />
-
-              <p>------------------------------------</p>
-
-              6. Symbol const sym = Symbol('unique'); <br /><br />
-
-              <p>------------------------------------</p>
-
-              7. Object var person = { name: 'John', age: 30 }; <br /><br />
-
-              <p>------------------------------------</p>
-
-              8. BigInt const bigIntNum =
-              1234567890123456789012345678901234567890n;
-              <br /><br /><br />
-            </div>
+          <button id="click-me-1" class="click-me">Click Me 1</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-1"></pre>
           </div>
+          <p></p>
         </div>
       </div>
       <button type="button" class="collapsible">
@@ -128,31 +104,80 @@
         <div class="lessoncontent">
           <h1>Tutorial: Lesson 2</h1>
           <h3>basic syntax</h3>
+          <br />
+
           <p>
-            In JavaScript, let's delve deeper into the basic data types
-            mentioned in the previous lesson:
-            <br /><br />
-            <strong>Number:</strong> Numeric values, such as integers or
-            floating-point numbers. <br /><br />
-            <strong>String:</strong> Textual values enclosed within single or
-            double quotes. <br /><br />
-            <strong>Boolean:</strong> Represents logical values, either true or
-            false. <br /><br />
-            Let's explore examples and use cases for each of these data types to
-            understand their significance in JavaScript programming.
+            In this lesson, we'll cover the basic syntax of JavaScript.
+            Understanding the syntax is crucial as it forms the foundation of
+            writing JavaScript code.
           </p>
-          <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                typeof "Hello"; // "string" <br />
-                typeof true; // "boolean"<br />
-                typeof null; // "object"<br />
-                typeof undefined; // "undefined"<br />
-                typeof Symbol("foo"); // "symbol"<br />
-                typeof 123n; // "bigint"<br />
-                typeof Math; // "object"<br />
-              </p>
-            </div>
+          <p>
+            JavaScript syntax includes rules for writing statements,
+            declarations, expressions, and comments. We'll explore each of these
+            elements in detail.
+          </p>
+          <ul>
+            <li>
+              Object-Oriented Programming (OOP) in JavaScript involves creating
+              objects with both data and functionality, promoting modular and
+              reusable code.
+            </li>
+            <li>
+              It emphasizes encapsulation, inheritance, and polymorphism to
+              organize code and facilitate reuse.
+            </li>
+            <li>
+              Functional Programming Paradigm treats computation as the
+              evaluation of mathematical functions, focusing on pure functions
+              and immutable data.
+            </li>
+            <li>
+              It encourages declarative code, avoiding mutable state and side
+              effects for simpler programs.
+            </li>
+            <li>
+              Asynchronous JavaScript (Promises, async/await) enables
+              non-blocking I/O, allowing concurrent tasks without waiting for
+              each to complete.
+            </li>
+            <li>
+              Promises offer a cleaner alternative to callback-based code, while
+              async/await provides readable syntax for async operations.
+            </li>
+            <li>
+              Modules and Module Loaders organize code into reusable units,
+              enhancing scalability and organization.
+            </li>
+            <li>
+              Encapsulating related code prevents naming conflicts and promotes
+              modularity, simplifying dependency management.
+            </li>
+            <li>
+              Browser APIs and DOM Manipulation let developers interact with the
+              DOM and access browser features.
+            </li>
+            <li>
+              They offer methods for dynamic web page manipulation, event
+              handling, HTTP requests, and browser-specific functionality.
+            </li>
+            <li>
+              Error Handling and Debugging Techniques involve identifying,
+              handling, and resolving errors and bugs in code.
+            </li>
+            <li>
+              Using try-catch blocks, logging errors, and browser developer
+              tools help in debugging and ensuring code reliability.
+            </li>
+            <li>
+              Understanding and applying these principles are crucial for
+              developing efficient, scalable JavaScript applications.
+            </li>
+          </ul>
+
+          <p>Let's dive into the world of JavaScript syntax!</p>
+          <button id="click-me-2" class="click-me">Click Me 2</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-2"></pre>
           </div>
         </div>
       </div>
@@ -164,11 +189,18 @@
           <p></p>
           <h1>Tutorial: Lesson 3</h1>
           <h3>variables</h3>
+          <br /><br />
+
           <p>
-            In this lesson, we'll explore advanced JavaScript concepts that will
-            take your programming skills to the next level. Some of the topics
-            covered include:
+            Variables are fundamental in programming as they allow us to store
+            and manipulate data. In this lesson, we'll explore variables in
+            JavaScript.
           </p>
+          <p>
+            We'll learn how to declare and initialize variables, understand
+            variable naming conventions, and explore different variable scopes.
+          </p>
+          <p>Get ready to master the concept of variables in JavaScript!</p>
           <ul>
             <li>Object-Oriented Programming (OOP) in JavaScript</li>
             <li>Functional Programming Paradigm</li>
@@ -181,18 +213,22 @@
             By understanding these advanced concepts, you'll be better equipped
             to build robust and efficient JavaScript applications.
           </p>
-          <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                typeof "Hello"; // "string" <br />
-                typeof true; // "boolean"<br />
-                typeof null; // "object"<br />
-                typeof undefined; // "undefined"<br />
-                typeof Symbol("foo"); // "symbol"<br />
-                typeof 123n; // "bigint"<br />
-                typeof Math; // "object"<br />
-              </p>
-            </div>
+          <p>
+            Object-Oriented Programming (OOP) is a programming paradigm that
+            revolves around the concept of objects, which encapsulate data and
+            behavior. In JavaScript, objects are created using either object
+            literals or constructor functions. OOP in JavaScript involves
+            principles like encapsulation, inheritance, and polymorphism.
+            Encapsulation refers to bundling data and methods that operate on
+            the data within a single unit, i.e., an object. Inheritance allows
+            objects to inherit properties and methods from other objects,
+            promoting code reuse. Polymorphism enables objects to be treated as
+            instances of their parent class, facilitating code flexibility and
+            modularity.
+          </p>
+          <button id="click-me-3" class="click-me">Click Me 3</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-3"></pre>
           </div>
         </div>
       </div>
@@ -201,40 +237,37 @@
       </button>
       <div class="content">
         <div class="lessoncontent">
-          <p></p>
-          <h1>Tutorial: Lesson 4</h1>
-          <h3>Operations</h3>
+          <h1>JavaScript Concepts</h1>
           <p>
-            Welcome to the Expert level of our JavaScript tutorial series! In
-            this lesson, we'll dive deep into intricate and sophisticated
-            aspects of JavaScript programming, catering to seasoned developers
-            who aim to become JavaScript masters. Topics covered include:
+            Variables are fundamental in programming as they allow us to store
+            and manipulate data. In this lesson, we'll explore variables in
+            JavaScript.
           </p>
+          <p>
+            We'll learn how to declare and initialize variables, understand
+            variable naming conventions, and explore different variable scopes.
+          </p>
+          <p>Get ready to master the concept of variables in JavaScript!</p>
           <ul>
-            <li>Advanced Data Structures and Algorithms</li>
-            <li>Performance Optimization Techniques</li>
-            <li>Design Patterns and Best Practices</li>
-            <li>Metaprogramming and Reflection</li>
-            <li>Browser Internals and Performance Tuning</li>
-            <li>Security Considerations and Vulnerability Mitigation</li>
+            <li>Object-Oriented Programming (OOP) in JavaScript</li>
+            <li>Functional Programming Paradigm</li>
+            <li>Asynchronous JavaScript (Promises, async/await)</li>
+            <li>Modules and Module Loaders</li>
+            <li>Browser APIs and DOM Manipulation</li>
+            <li>Error Handling and Debugging Techniques</li>
           </ul>
           <p>
-            By mastering these advanced topics, you'll possess the expertise to
-            tackle complex challenges and build high-performance,
-            enterprise-grade JavaScript applications.
+            By understanding these advanced concepts, you'll be better equipped
+            to build robust and efficient JavaScript applications.
           </p>
+          <h2>Object-Oriented Programming (OOP) in JavaScript</h2>
+
+          <button id="click-me-4" class="click-me">Click Me 4</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-4"></pre>
+          </div>
           <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                typeof "Hello"; // "string" <br />
-                typeof true; // "boolean"<br />
-                typeof null; // "object"<br />
-                typeof undefined; // "undefined"<br />
-                typeof Symbol("foo"); // "symbol"<br />
-                typeof 123n; // "bigint"<br />
-                typeof Math; // "object"<br />
-              </p>
-            </div>
+            <div class="codeblockinner"></div>
           </div>
         </div>
       </div>
@@ -243,28 +276,83 @@
       </button>
       <div class="content">
         <div class="lessoncontent">
-          <p></p>
-          <h1>Tutorial: Lesson 4</h1>
-          <h3>Control structures</h3>
+          <h2>Control Structures in JavaScript</h2>
           <p>
-            Welcome to the Expert level of our JavaScript tutorial series! In
-            this lesson, we'll dive deep into intricate and sophisticated
-            aspects of JavaScript programming, catering to seasoned developers
-            who aim to become JavaScript masters. Topics covered include:
+            Control structures are fundamental components in programming that
+            enable you to manage the flow of execution in your JavaScript code.
+            They allow you to make decisions, repeat actions, and handle
+            different scenarios based on specified conditions.
+          </p>
+          <h3>Conditional Statements</h3>
+          <p>
+            Conditional statements, such as <code>if</code>,
+            <code>else if</code>, and <code>else</code>, provide the ability to
+            execute specific blocks of code based on certain conditions. These
+            statements allow you to implement decision-making logic, enabling
+            your program to adapt and respond to different scenarios.
           </p>
           <ul>
-            <li>Advanced Data Structures and Algorithms</li>
-            <li>Performance Optimization Techniques</li>
-            <li>Design Patterns and Best Practices</li>
-            <li>Metaprogramming and Reflection</li>
-            <li>Browser Internals and Performance Tuning</li>
-            <li>Security Considerations and Vulnerability Mitigation</li>
+            <li>
+              <strong>if Statement:</strong> The <code>if</code> statement
+              evaluates a condition and executes a block of code if the
+              condition is true.
+            </li>
+            <li>
+              <strong>else if Statement:</strong> The
+              <code>else if</code> statement provides an additional condition to
+              test if the initial <code>if</code> condition is false.
+            </li>
+            <li>
+              <strong>else Statement:</strong> The <code>else</code> statement
+              executes a block of code if none of the preceding conditions are
+              true.
+            </li>
           </ul>
+          <h3>Loops</h3>
           <p>
-            By mastering these advanced topics, you'll possess the expertise to
-            tackle complex challenges and build high-performance,
-            enterprise-grade JavaScript applications.
+            Loops are used to repeat a block of code multiple times until a
+            specified condition is met. JavaScript offers different types of
+            loops, each serving a specific purpose and allowing for various
+            iteration scenarios.
           </p>
+          <ul>
+            <li>
+              <strong>for Loop:</strong> The <code>for</code> loop executes a
+              block of code a specified number of times, iterating over a range
+              of values defined by an initialization, condition, and iteration
+              expression.
+            </li>
+            <li>
+              <strong>while Loop:</strong> The <code>while</code> loop repeats a
+              block of code as long as a specified condition remains true,
+              allowing for indefinite iteration based on the condition's
+              evaluation.
+            </li>
+            <li>
+              <strong>do...while Loop:</strong> The <code>do...while</code> loop
+              is similar to the <code>while</code> loop, but it always executes
+              the block of code at least once before checking the loop
+              condition.
+            </li>
+          </ul>
+          <h3>Switch Statements</h3>
+          <p>
+            Switch statements provide an alternative to multiple
+            <code>if...else</code> statements when you need to compare a single
+            value against multiple possible values. They offer a concise and
+            efficient way to execute different blocks of code based on the value
+            of a variable or expression.
+          </p>
+          <p>
+            By mastering control structures in JavaScript, you gain the ability
+            to write more dynamic and responsive code, making your programs more
+            flexible and adaptable to various situations.
+          </p>
+
+          <button id="click-me-5" class="click-me">Click Me 5</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-5"></pre>
+          </div>
           <div class="codeblockouter">
             <div class="codeblockinner">
               <p>
@@ -285,80 +373,129 @@
       </button>
       <div class="content">
         <div class="lessoncontent">
-          <p></p>
-          <h1>Tutorial: Lesson 4</h1>
-          <h3>Functions</h3>
+          <h2>Functions in JavaScript</h2>
           <p>
-            Welcome to the Expert level of our JavaScript tutorial series! In
-            this lesson, we'll dive deep into intricate and sophisticated
-            aspects of JavaScript programming, catering to seasoned developers
-            who aim to become JavaScript masters. Topics covered include:
+            Functions are essential building blocks in JavaScript that enable
+            you to encapsulate and reuse blocks of code. In this lesson, we'll
+            explore functions in depth, covering their syntax, parameters,
+            return values, and scope.
+          </p>
+          <h3>Function Declaration</h3>
+          <p>
+            Function declarations define named functions, specifying the
+            function's name, parameters (if any), and the code block to be
+            executed when the function is called.
           </p>
           <ul>
-            <li>Advanced Data Structures and Algorithms</li>
-            <li>Performance Optimization Techniques</li>
-            <li>Design Patterns and Best Practices</li>
-            <li>Metaprogramming and Reflection</li>
-            <li>Browser Internals and Performance Tuning</li>
-            <li>Security Considerations and Vulnerability Mitigation</li>
+            <li>
+              <strong>Syntax:</strong>
+              <code
+                >function functionName(parameter1, parameter2) { // Function
+                body }</code
+              >
+            </li>
           </ul>
+          <h3>Function Expressions</h3>
           <p>
-            By mastering these advanced topics, you'll possess the expertise to
-            tackle complex challenges and build high-performance,
-            enterprise-grade JavaScript applications.
+            Function expressions involve defining a function as part of an
+            expression, typically by assigning it to a variable. They offer
+            flexibility and can be anonymous or named.
           </p>
-          <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                typeof "Hello"; // "string" <br />
-                typeof true; // "boolean"<br />
-                typeof null; // "object"<br />
-                typeof undefined; // "undefined"<br />
-                typeof Symbol("foo"); // "symbol"<br />
-                typeof 123n; // "bigint"<br />
-                typeof Math; // "object"<br />
-              </p>
-            </div>
+          <ul>
+            <li>
+              <strong>Anonymous Function Expression:</strong>
+              <code
+                >var myFunction = function(parameter1, parameter2) { // Function
+                body }</code
+              >
+            </li>
+            <li>
+              <strong>Named Function Expression:</strong>
+              <code
+                >var myFunction = function functionName(parameter1, parameter2)
+                { // Function body }</code
+              >
+            </li>
+          </ul>
+          <h3>Function Scope</h3>
+          <p>
+            Function scope refers to the visibility and accessibility of
+            variables defined within a function. Understanding function scope is
+            crucial for managing variable lifetimes and avoiding unintended side
+            effects.
+          </p>
+          <p>
+            By mastering functions in JavaScript, you'll unlock the power of
+            code organization, reusability, and abstraction, leading to more
+            modular and maintainable applications.
+          </p>
+
+          <button id="click-me-6" class="click-me">Click Me 6</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-6"></pre>
           </div>
         </div>
       </div>
       <button type="button" class="collapsible">Open Lesson 7: Objects</button>
       <div class="content">
         <div class="lessoncontent">
-          <p></p>
-          <h1>Tutorial: Lesson 4</h1>
-          <h3>Objects</h3>
+          <h2>Objects in JavaScript</h2>
           <p>
-            Welcome to the Expert level of our JavaScript tutorial series! In
-            this lesson, we'll dive deep into intricate and sophisticated
-            aspects of JavaScript programming, catering to seasoned developers
-            who aim to become JavaScript masters. Topics covered include:
+            Objects are fundamental data structures in JavaScript that enable
+            you to store and manipulate complex data. In this lesson, we'll dive
+            deep into objects, exploring their properties, methods, prototypes,
+            and inheritance.
+          </p>
+          <h3>Object Creation</h3>
+          <p>
+            Objects in JavaScript can be created using object literals,
+            constructor functions, or the <code>Object()</code> constructor.
+            Each method offers different capabilities and use cases for creating
+            objects.
           </p>
           <ul>
-            <li>Advanced Data Structures and Algorithms</li>
-            <li>Performance Optimization Techniques</li>
-            <li>Design Patterns and Best Practices</li>
-            <li>Metaprogramming and Reflection</li>
-            <li>Browser Internals and Performance Tuning</li>
-            <li>Security Considerations and Vulnerability Mitigation</li>
+            <li>
+              <strong>Object Literal:</strong>
+              <code>var person = { name: 'John', age: 30 };</code>
+            </li>
+            <li>
+              <strong>Constructor Function:</strong>
+              <code
+                >function Person(name, age) { this.name = name; this.age = age;
+                }</code
+              >
+            </li>
+            <li>
+              <strong>Object Constructor:</strong>
+              <code
+                >var person = new Object(); person.name = 'John'; person.age =
+                30;</code
+              >
+            </li>
           </ul>
+          <h3>Object Methods</h3>
           <p>
-            By mastering these advanced topics, you'll possess the expertise to
-            tackle complex challenges and build high-performance,
-            enterprise-grade JavaScript applications.
+            Object methods are functions defined within an object, allowing you
+            to perform actions or calculations related to the object's
+            properties. They enable encapsulation and provide a way to interact
+            with object data.
           </p>
-          <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                typeof "Hello"; // "string" <br />
-                typeof true; // "boolean"<br />
-                typeof null; // "object"<br />
-                typeof undefined; // "undefined"<br />
-                typeof Symbol("foo"); // "symbol"<br />
-                typeof 123n; // "bigint"<br />
-                typeof Math; // "object"<br />
-              </p>
-            </div>
+          <h3>Prototypes and Inheritance</h3>
+          <p>
+            Prototypes and inheritance are advanced concepts in JavaScript that
+            allow objects to inherit properties and methods from other objects.
+            Understanding prototypes is essential for leveraging JavaScript's
+            powerful object-oriented capabilities.
+          </p>
+          <p>
+            By mastering objects in JavaScript, you'll gain the ability to model
+            real-world entities, organize data effectively, and build scalable
+            and maintainable applications.
+          </p>
+
+          <button id="click-me-7" class="click-me">Click Me 7</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-7"></pre>
           </div>
         </div>
       </div>
@@ -366,43 +503,59 @@
       <div class="content">
         <div class="lessoncontent">
           <p></p>
-          <h1>Tutorial: Lesson 4</h1>
-          <h3>Arrays</h3>
+          <h1>Tutorial: Lesson 8</h1>
+          <h2>Arrays in JavaScript</h2>
           <p>
-            Welcome to the Expert level of our JavaScript tutorial series! In
-            this lesson, we'll dive deep into intricate and sophisticated
-            aspects of JavaScript programming, catering to seasoned developers
-            who aim to become JavaScript masters. Topics covered include:
+            Arrays are versatile data structures in JavaScript that allow you to
+            store collections of elements. In this lesson, we'll explore arrays
+            comprehensively, covering array creation, manipulation, iteration,
+            and common array methods.
+          </p>
+          <h3>Array Creation</h3>
+          <p>
+            Arrays can be created using array literals or the
+            <code>Array()</code> constructor. They can hold elements of any data
+            type and can dynamically resize as elements are added or removed.
           </p>
           <ul>
-            <li>Advanced Data Structures and Algorithms</li>
-            <li>Performance Optimization Techniques</li>
-            <li>Design Patterns and Best Practices</li>
-            <li>Metaprogramming and Reflection</li>
-            <li>Browser Internals and Performance Tuning</li>
-            <li>Security Considerations and Vulnerability Mitigation</li>
+            <li>
+              <strong>Array Literal:</strong>
+              <code>var numbers = [1, 2, 3, 4, 5];</code>
+            </li>
+            <li>
+              <strong>Array Constructor:</strong>
+              <code>var colors = new Array('red', 'green', 'blue');</code>
+            </li>
           </ul>
+          <h3>Array Manipulation</h3>
           <p>
-            By mastering these advanced topics, you'll possess the expertise to
-            tackle complex challenges and build high-performance,
-            enterprise-grade JavaScript applications.
+            Arrays offer various methods for adding, removing, and modifying
+            elements. These methods enable you to manipulate array contents
+            dynamically based on your application's requirements.
           </p>
-          <div class="codeblockouter">
-            <div class="codeblockinner">
-              <p>
-                typeof "Hello"; // "string" <br />
-                typeof true; // "boolean"<br />
-                typeof null; // "object"<br />
-                typeof undefined; // "undefined"<br />
-                typeof Symbol("foo"); // "symbol"<br />
-                typeof 123n; // "bigint"<br />
-                typeof Math; // "object"<br />
-              </p>
-            </div>
+          <h3>Array Iteration</h3>
+          <p>
+            Array iteration involves traversing through each element of an array
+            and performing an action on each element. JavaScript provides
+            multiple ways to iterate over arrays, including
+            <code>for</code> loops, <code>forEach()</code> method, and array
+            destructuring.
+          </p>
+          <p>
+            By mastering arrays in JavaScript, you'll have a powerful tool at
+            your disposal for storing, organizing, and processing data
+            efficiently, empowering you to build dynamic and interactive
+            applications.
+          </p>
+
+          <button id="click-me-8" class="click-me">Click Me 8</button>
+          <div class="cmd-window">
+            <pre class="output" id="output-8"></pre>
           </div>
         </div>
       </div>
     </div>
+
     <script src="/lesson.js"></script>
   </body>
 </html>

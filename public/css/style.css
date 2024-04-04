@@ -284,8 +284,6 @@ input[type="password"] {
   }
 }
 
-/*lesson page */
-
 .lessoncontainer {
   background-color: rgb(229, 244, 244);
   width: 90%;
@@ -293,27 +291,8 @@ input[type="password"] {
   margin-left: 5%;
   margin-top: 5%;
   align-items: center;
-}
-
-.lessoncontent {
-  padding: 10px;
-}
-
-.codeblockouter {
-  background-color: chartreuse;
-  width: 90%;
-  height: 90%;
-  padding: 10px;
-}
-
-.codeblockinner {
-  background-color: #000000;
-  width: 98%;
-  height: 90%;
-  color: #ffffff;
-  margin-top: 5px;
-  margin-left: 5px;
-  padding: 3px;
+  outline: #000000;
+  outline-width: 12px;
 }
 
 .collapsible {
@@ -322,24 +301,100 @@ input[type="password"] {
   cursor: pointer;
   padding: 18px;
   width: 100%;
+  height: 70px;
   border: none;
+  outline: #000000;
+  outline-width: 12px;
   text-align: left;
   outline: none;
   font-size: 15px;
+  transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
-.active,
 .collapsible:hover {
-  background-color: #ccc;
+  background-color: #ccc; /* Change background color on hover */
 }
 
+/* Initially hide the content */
 .content {
+  outline: #000000;
+  outline-width: 12px;
   padding: 0 18px;
-  max-height: 0; /* Initial state with no height */
+  max-height: 0;
   overflow: hidden;
-  background-color: #f1f1f1;
-  transition: max-height 0.2s ease-out;
-  /* Smooth transition for max-height */
+  background-color: #fff7f7;
+  transition: max-height 0.7s ease-out; /* Smooth transition for max-height */
 }
 
-/* Add any additional styles you have here */
+/* Transition max-height and background color on hover */
+.collapsible:hover + .content {
+  max-height: 18%; /* Set a value to peek open slightly */
+  transition: max-height 0.2.5s ease-out; /* Transition max-height */
+}
+
+/* Transition max-height when active */
+.collapsible.active + .content {
+  max-height: 1000px; /* Allow content to expand to its full height */
+}
+.collapsible.active {
+  background-color: #444;
+  padding: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+/* computer display for lessons */
+.cmd-window {
+  background-color: black;
+  color: lime;
+  font-family: "Courier New", Courier, monospace;
+  padding: 10px;
+  border: 2px solid lime;
+  width: 1250px;
+  margin: 50px auto;
+  height: 500px;
+  overflow-y: auto;
+  font-size: 17px; /* Set font size to 100px */
+}
+
+.click-me {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+/* Apply styles to coding terms inside the cmd-window */
+.cmd-window span[data-term="var"] {
+  color: blue; /* Set color for 'var' */
+}
+
+.cmd-window span[data-term="let"] {
+  color: blue; /* Set color for 'let' */
+}
+
+.cmd-window span[data-term="const"] {
+  color: blue; /* Set color for 'const' */
+}
+
+.cmd-window span[data-term="true"] {
+  color: green; /* Set color for 'true' */
+}
+
+.cmd-window span[data-term="false"] {
+  color: green; /* Set color for 'false' */
+}
+
+.cmd-window span[data-term="null"] {
+  color: blue; /* Set color for 'null' */
+}
+
+.cmd-window span[data-term="undefined"] {
+  color: gray; /* Set color for 'undefined' */
+}
+
+.cmd-window span[data-term="Symbol"] {
+  color: purple; /* Set color for 'Symbol' */
+}
+
+.cmd-window span[data-term="BigInt"] {
+  color: blue; /* Set color for 'BigInt' */
+}
