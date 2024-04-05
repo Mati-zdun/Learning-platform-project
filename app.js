@@ -88,11 +88,17 @@ app.get("/logged.html", function (req, res) {
 
 // Handling user signup
 app.post("/register", async (req, res) => {
-  const user = await User.create({
+  const user1 = await User.create({
     username: req.body.username,
     password: req.body.password,
   });
   res.render("logged");
+
+  const user2 = await User.create({
+    username: req.body.username,
+    password: req.body.password,
+  });
+  res.render("logged.html");
 });
 
 //Showing login form

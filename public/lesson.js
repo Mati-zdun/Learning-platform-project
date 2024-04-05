@@ -10,6 +10,19 @@ document.addEventListener("DOMContentLoaded", function () {
       content.style.maxHeight = null; // Remove maxHeight property
     }
   }
+  // JavaScript to handle the toggle of lessonextend div
+  const lessonToggle = document.querySelector(".collapsible");
+  const lessonExtend = document.querySelector(".lessonextend");
+
+  lessonToggle.addEventListener("click", function () {
+    if (lessonExtend.classList.contains("active")) {
+      lessonExtend.style.transform = "translateX(100%)";
+      lessonExtend.classList.remove("active");
+    } else {
+      lessonExtend.style.transform = "translateX(0)";
+      lessonExtend.classList.add("active");
+    }
+  });
 
   // Add event listeners for click to toggle collapsible divs
   var coll = document.querySelectorAll(".collapsible");
@@ -28,6 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
       var outputElement = document.getElementById("output-" + lessonNumber);
       // Call the typeText function with the output element
       typeText(outputElement, lessonNumber);
+    });
+  });
+
+  // flash cards
+  const flashcards = document.querySelectorAll(".flashcard");
+
+  flashcards.forEach((card) => {
+    card.addEventListener("click", () => {
+      card.classList.toggle("flipped");
     });
   });
 
@@ -404,6 +426,3 @@ function highlightCodingTerms(text) {
       }">${match}</span>`
   );
 }
-
-// Apply highlighting to each item in the array
-const highlightedTextToType = textToType.map(highlightCodingTerms);
