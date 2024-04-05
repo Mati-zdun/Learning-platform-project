@@ -166,15 +166,25 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr;
-  gap: 0px 0px;
-  padding: 3rem;
+  gap: 100px 0px;
+  padding: 2.5rem;
   justify-items: center;
 }
 
 /* Content div*/
 .c1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
-  padding: 100px;
+}
+
+.c2{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  gap: 20px;
 }
 /* Landing image style*/
 .landing {
@@ -185,7 +195,7 @@ html {
 .button {
   background-color: #d87093;
   color: white;
-  border-radius: 10px;
+  border-radius: 15px;
   padding: 10px;
   width: 200px;
   border: none;
@@ -206,6 +216,10 @@ html {
 
 .button1:hover {
   background-color: #ccc;
+}
+
+.button:hover{
+  background-color: #864158;
 }
 
 .cancelbtn {
@@ -403,6 +417,7 @@ input[type="password"] {
   outline: none;
   font-size: 15px;
   transition: background-color 0.3s; /* Smooth transition for background color */
+  font-weight: bold;
 }
 
 .collapsible:hover {
