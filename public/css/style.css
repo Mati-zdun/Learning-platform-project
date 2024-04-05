@@ -119,10 +119,13 @@ a{
 .icon {
   cursor: pointer;
 }
-.nav-cont.active {
-  background-color: #444;
+#nav-cont.active {
+  background-color: pink;
   padding: 20px;
   transition: 0.2s ease-in-out;
+}
+#nav-cont:hover{
+  background-color: grey;
 }
 .link-container {
   background-color: #444;
@@ -200,7 +203,7 @@ a{
 .button {
   background-color: #d87093;
   color: white;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 10px;
   width: 200px;
   border: none;
@@ -345,6 +348,11 @@ input[type="password"] {
 }
 #submit:hover {
   background-color: #d87093dc;
+}
+
+#results{
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /* Responsive - Show menu on smaller screens */
