@@ -65,8 +65,17 @@ passport.deserializeUser(User.deserializeUser());
 //=====================
 
 app.get("/", (req, res) => {
-  res.sendFile("index.html");
+  if (req.session.user) {
+    // User is authenticated, render the dashboard
+    res.render("dashboard", {username: req.body.username}); // Use the appropriate EJS template
+  } else {
+    // User is not authenticated, render the regular index page
+    res.render("login"); // Use the appropriate EJS template
+  }
 });
+
+
+
 // Showing home page
 app.get("/register.html", function (req, res) {
   res.render("register.html");
@@ -100,18 +109,23 @@ app.get("/login", function (req, res) {
   res.render("login");
 });
 
-//Handling user login
 app.post("/login", async function (req, res) {
   try {
-    // check if the user exists
+    // Check if the user exists
     const user = await User.findOne({ username: req.body.username });
     if (user) {
-      //check if password matches
+      // Check if password matches
       const result = req.body.password === user.password;
       if (result) {
-        res.render("auth");
+        // Store user data in the session
+        req.session.user = {
+          id: user.id,
+          username: user.username,
+          // Other relevant user properties
+        };
+        res.render("dashboard", {username: req.body.username}); // Redirect to the dashboard
       } else {
-        res.status(400).json({ error: "password doesn't match" });
+        res.status(400).json({ error: "Password doesn't match" });
       }
     } else {
       res.status(400).json({ error: "User doesn't exist" });
@@ -121,15 +135,23 @@ app.post("/login", async function (req, res) {
   }
 });
 
-//Handling user logout
-app.get("/logout", function (req, res) {
-  req.logout(function (err) {
-    if (err) {
-      return next(err);
-    }
-    res.redirect("/");
+
+app.get("/logout", (req, res) => {
+  req.session.destroy(() => {
+    res.redirect("/login"); // Redirect to login page after logout
   });
 });
+
+app.get("/dashboard", (req, res) => {
+  if (req.session.user) {
+    // User is authenticated, render the dashboard
+    res.render("dashboard", {username: req.body.username}); // Use the appropriate EJS template
+  } else {
+    // User is not authenticated, redirect to login
+    res.redirect("/login");
+  }
+});
+
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) return next();

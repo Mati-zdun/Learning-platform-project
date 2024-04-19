@@ -1,0 +1,16 @@
+<!-- navbar.ejs -->
+<nav class="navbar">
+    <div class="navcontainer">
+      <a href="#" class="logo">Javascript Manuscript</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        % if (user) { %>
+          <!-- Display account-related links for logged-in users -->
+          <li><a href="/account">Account</a></li>
+          <li><a href="/lessons">Lessons</a></li>
+          <li><a href="/assessments">Assessments</a></li>
+        % } %>
+        <li><a href="/about">About Us</a></li>
+      </ul>
+    </div>
+  </nav>

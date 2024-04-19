@@ -1122,3 +1122,13 @@
   // Call loadQuiz when the page loads
   window.addEventListener("load", loadQuiz);
 })();
+
+myQuestions1.forEach(async (questionData) => {
+  const quizQuestion = new Quiz(questionData);
+  try {
+    await quizQuestion.save();
+    console.log(`Question saved successfully: ${questionData.question}`);
+  } catch (error) {
+    console.error(`Error saving question: ${error.message}`);
+  }
+});

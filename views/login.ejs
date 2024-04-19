@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/css/style.css" rel="stylesheet" type="text/css">
+        <link href="/public/css/style.css" type="text/css" rel="stylesheet"/>
+        <title>JS learning</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="navcontainer"> 
+                <a href="#" class="logo">Javascript Manuscript</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" id="nav-cont">Home</a></li>
+                    <li><a href="register.html" id="nav-cont">Account</a></li>
+                    <li><a href="lesson.html" id="nav-cont">Lessons</a></li>
+                    <li><a href="asessment.html" id="nav-cont">Assessments</a></li>
+                    <li><a href="about.html" id="nav-cont">About Us</a></li>
+                    <li><a href="about.html" id="nav-cont">not loggged in</a></li>
+                </ul>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div> 
+        </nav>
+        <form action="/login" method="POST">
+            <div class="container">
+                <h1>Log In</h1>
+                <input type="text" name="username"
+                    placeholder="username">
+                <input type="password" name="password"
+                    placeholder="password">
+                <button class="button">login</button>
+            </div>
+        </form>
