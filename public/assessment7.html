@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/public/css/style.css" type="text/css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>JS learning</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navcontainer">
+        <a href="#" class="logo">Javascript Manuscript</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="register.html" class="nav-link">Account</a></li>
+          <li><a href="progress.html" class="nav-link">Progress</a></li>
+          <li><a href="lesson.html" class="nav-link">Lessons</a></li>
+          <li><a href="asessment.html" class="nav-link">Assessment</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+        </ul>
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="questions">
+      <h1>Functions</h1>
+      <div id="quiz"></div>
+      <button id="submit">Submit Quiz</button>
+      <div id="results"></div>
+      <button class="button1" onClick="window.location.reload();">Retry</button>
+
+      <script src="/assessment.js"></script>
+      <script src="/public/assessment.js"></script>
+    </div>
+  </body>
+</html>

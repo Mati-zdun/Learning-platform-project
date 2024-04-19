@@ -41,7 +41,7 @@ async function run() {
 }
 run().catch(console.dir);
 
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -93,12 +93,6 @@ app.post("/register", async (req, res) => {
     password: req.body.password,
   });
   res.render("logged");
-
-  const user2 = await User.create({
-    username: req.body.username,
-    password: req.body.password,
-  });
-  res.render("logged.html");
 });
 
 //Showing login form
