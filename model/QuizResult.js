@@ -1,9 +1,22 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-const quizResultSchema = new mongoose.Schema({
-  userAnswers: [String], // Array of user answers (e.g., ['a', 'b', 'c'])
-  score: Number, // Number of correct answers
-  // Add any other relevant fields if needed
+var quizResultSchema = new mongoose.Schema({
+  userId: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User", // Reference to your User model (if applicable)
+  },
+  quizName: {
+    type: String,
+    required: true,
+  },
+  score: {
+    type: Number,
+    required: true,
+  },
+  submittedAt: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
-const QuizResult = mongoose.model('QuizResult', quizResultSchema);
+module.exports = mongoose.model("QuizResult", quizResultSchema);
