@@ -1,6 +1,6 @@
 # The Javascript manuscript.
 
-## Access the website using this link: https://learning-platform-project-1u75.onrender.com
+Learn, and assess your skills.
 
 This website is built using HTML, CSS, JS, NodeJS, and EJS.
 
