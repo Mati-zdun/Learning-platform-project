@@ -99,25 +99,7 @@ a {
   box-shadow: 15px 35px 35px rgba(50, 50, 93, 0.1),
     0 1px 1px rgba(0, 0, 0, 0.07);
 }
-.logo {
-  font-weight: bold;
-  color: black;
-  padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  background: rgba(81, 81, 81, 0.25);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10.3px);
-  -webkit-backdrop-filter: blur(10.3px);
-  text-decoration: none;
-  width: 300px;
-  align-items: center;
-  text-align: center;
-  margin: 1rem;
-  font-weight: bold;
-  font-size: 20px;
-}
+
 .icon {
   cursor: pointer;
 }
@@ -144,17 +126,25 @@ a {
 }
 
 .nav-links a {
-  color: #000000;
+  color: white;
   text-decoration: none;
   padding: 10px;
   padding-right: 25px;
   padding-left: 25px;
   /* From https://css.glass */
-  background: rgba(81, 81, 81, 0.25);
-  border-radius: 16px;
+  background: #d87093;
+  border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10.3px);
   -webkit-backdrop-filter: blur(10.3px);
+}
+
+.nav-links a:hover {
+  background-color: #864158;
+}
+
+.nav-links a:active {
+  background-color: #864158;
 }
 
 /* Hamburger Menu */
