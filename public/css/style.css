@@ -11,7 +11,7 @@ html {
   background-color: white;
 }
 
-a{
+a {
   color: #000000;
   text-decoration: none;
 }
@@ -53,9 +53,9 @@ a{
 }
 
 .grid-box {
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr; 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   gap: 100px 10px;
   justify-items: center;
   padding: 2vh;
@@ -80,11 +80,12 @@ a{
   align-items: center; /* Center horizontally */
   padding: 10px;
 }
-#quiz{
+#quiz {
   border: 1px solid black;
   padding: 2vh;
   border-radius: 15px;
-  box-shadow: 15px 35px 35px rgba(50,50,93,.1), 0 1px 1px rgba(0,0,0,.07);
+  box-shadow: 15px 35px 35px rgba(50, 50, 93, 0.1),
+    0 1px 1px rgba(0, 0, 0, 0.07);
 }
 
 .box {
@@ -95,7 +96,8 @@ a{
   color: black;
   border-radius: 15px;
   border: 1px solid black;
-  box-shadow: 15px 35px 35px rgba(50,50,93,.1), 0 1px 1px rgba(0,0,0,.07);
+  box-shadow: 15px 35px 35px rgba(50, 50, 93, 0.1),
+    0 1px 1px rgba(0, 0, 0, 0.07);
 }
 .logo {
   font-weight: bold;
@@ -124,7 +126,7 @@ a{
   padding: 20px;
   transition: 0.2s ease-in-out;
 }
-#nav-cont:hover{
+#nav-cont:hover {
   background-color: grey;
 }
 .link-container {
@@ -179,6 +181,31 @@ a{
   justify-items: center;
 }
 
+.content-a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px 0px;
+  padding: 2.5rem;
+  padding-bottom: 5rem;
+  justify-items: center;
+}
+.dr {
+  width: 51%;
+  float: right;
+}
+.cat {
+  width: 30%;
+  float: right;
+}
+.tv {
+  width: 30%;
+  float: left;
+}
+.codepic {
+  width: 50%;
+  float: right;
+}
+
 /* Content div*/
 .c1 {
   display: flex;
@@ -187,13 +214,28 @@ a{
   box-sizing: border-box;
 }
 
-.c2{
+/* Content div*/
+.c10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-left: 18%;
+}
+/* Content div*/
+.tv2 {
+  width: 45%;
+  float: right;
+}
+
+.c2 {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   padding: 20px;
   gap: 20px;
 }
+
 /* Landing image style*/
 .landing {
   width: 80%;
@@ -226,7 +268,7 @@ a{
   background-color: #ccc;
 }
 
-.button:hover{
+.button:hover {
   background-color: #864158;
 }
 
@@ -242,7 +284,8 @@ a{
   align-items: stretch;
   flex-wrap: wrap;
   border-radius: 15px;
-  box-shadow: 15px 35px 35px rgba(50,50,93,.1), 0 1px 1px rgba(0,0,0,.07);
+  box-shadow: 15px 35px 35px rgba(50, 50, 93, 0.1),
+    0 1px 1px rgba(0, 0, 0, 0.07);
   border: 1px solid black;
   flex-direction: column;
   margin: 0 auto;
@@ -351,7 +394,7 @@ input[type="password"] {
   background-color: #d87093dc;
 }
 
-#results{
+#results {
   font-size: 30px;
   font-weight: 400;
 }
@@ -359,22 +402,29 @@ input[type="password"] {
 /* (A) BACKGROUND */
 #boxBack {
   /* (A1) FULLSCREEN + CENTERED */
-  position: fixed; z-index: 999;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  align-items: center; justify-content: center;
- 
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
   /* (A2) TRANSPARENT BACKGROUND + HIDDEN */
   background: rgba(0, 0, 0, 0.5);
   display: none;
 }
- 
+
 /* (A3) ADD THIS CSS CLASS TO SHOW */
-#boxBack.show { display: flex; }
- 
+#boxBack.show {
+  display: flex;
+}
+
 /* (B) DIALOG BOX */
 #boxWrap {
-  min-width: 320px; max-width: 600px;
+  min-width: 320px;
+  max-width: 600px;
   padding: 10px;
   background: #fff;
 }
@@ -390,27 +440,6 @@ input[type="password"] {
   }
 }
 
-/*  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-
 .input-group {
   margin: 10px;
 }
@@ -421,14 +450,13 @@ input[type="text"] {
 
 @keyframes fadeOut {
   from {
-    opacity: 0.33; /* Start with full opacity */
+    opacity: 0.33;
   }
   to {
-    opacity: 0; /* Fade out to opacity 0 */
+    opacity: 0;
   }
 }
 
-/* Apply fade-out animation after 5 seconds */
 .collapsible:hover .arrow {
   animation: fadeOut 0.6s forwards 0.6s; /* Play fadeOut animation after 5 seconds */
 }
@@ -470,11 +498,13 @@ input[type="text"] {
 }
 
 .lessoncontainer {
+  margin-left: 15px;
   display: flex;
+  width: 98%;
   justify-content: center; /* Center horizontally */
   flex-direction: column; /* Align items in a column */
   flex: 1;
-  background-image: linear-gradient(to right, white, hwb(0 91% 9%));
+  background-image: linear-gradient(to right, white, hwb(330 96% 0%));
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 1px 5px rgba(0, 2, 5, 7);
@@ -526,7 +556,7 @@ input[type="text"] {
 /* Transition max-height when active */
 .collapsible.active + .content1 {
   max-height: 1000px; /* Allow content to expand to its full height */
-  width: 100%;
+  width: 97.5%;
   transition: width 0.3s ease-in-out;
 }
 

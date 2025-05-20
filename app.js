@@ -5,7 +5,6 @@ const express = require("express"),
   LocalStrategy = require("passport-local"),
   passportLocalMongoose = require("passport-local-mongoose");
 const User = require("./model/user");
-const quizResultSchema = require("./model/QuizResult")
 let app = express();
 const path = require("path");
 
@@ -103,12 +102,6 @@ app.post("/register", async (req, res) => {
     password: req.body.password,
   });
   res.render("logged");
-
-  const user2 = await User.create({
-    username: req.body.username,
-    password: req.body.password,
-  });
-  res.render("logged");
 });
 
 //Showing login form
@@ -145,7 +138,7 @@ app.post("/login", async function (req, res) {
 
 app.get("/logout", (req, res) => {
   req.session.destroy(() => {
-    res.redirect("/");
+    res.redirect("/login"); // Redirect to login page after logout
   });
 });
 
