@@ -7,7 +7,7 @@ const express = require("express"),
 const User = require("./model/user");
 let app = express();
 const path = require("path");
-
+const lusca = require("lusca");
 mongoose.connect(
   "mongodb+srv://user:mati2008@clusterjava.dnds0q7.mongodb.net/?retryWrites=true&w=majority&appName=ClusterJava"
 );
@@ -52,6 +52,14 @@ app.use(
     saveUninitialized: false,
   })
 );
+
+// Add CSRF protection
+app.use(lusca.csrf());
+// Expose CSRF token to views
+app.use(function(req, res, next) {
+  res.locals.csrfToken = req.csrfToken ? req.csrfToken() : (req.csrfToken && req.csrfToken);
+  next();
+});
 
 app.use(passport.initialize());
 app.use(passport.session());
